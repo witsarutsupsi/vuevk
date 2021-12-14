@@ -1,6 +1,6 @@
 <template>
 <div>
-    Hi Hi
+    Hi Hi Hi
   <unity src="static/Build/VK Build.json" width="1000" height="600" unityLoader="static/Build/UnityLoader.js"></unity>  
 </div>
 </template>
