@@ -3,7 +3,7 @@
     Hi Hi Hi
   <unity src="static/Build/VK Build.json" width="1000" height="600" unityLoader="static/Build/UnityLoader.js"></unity>  
   
-  <p id="ImageBase64">0</p>
+
 </div>
 </template>
 
@@ -17,7 +17,7 @@ export default {
     },
     methods: {
     ImageStream(value) {
-      document.getElementById("ImageBase64").innerHTML = value;
+
     }
   }
 };
