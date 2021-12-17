@@ -2,8 +2,7 @@
 <div>
     Hi Hi Hi
   <unity src="static/Build/VK Build.json" width="1000" height="600" unityLoader="static/Build/UnityLoader.js"></unity>  
-  
-
+  <p id="ImageBase64">0</p>
 </div>
 </template>
 
@@ -15,6 +14,12 @@ export default {
   components: {
       Unity,
     },
+    
+    methods: {
+    ImageStream(value) {
+      document.body.getElementById("ImageBase64").innerText = value;
+    }
+  }
 };
 </script>
 
