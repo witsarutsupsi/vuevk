@@ -15,11 +15,6 @@ export default {
   components: {
       Unity,
     },
-    methods: {
-    ImageStream(value) {
-
-    }
-  }
 };
 </script>
 
