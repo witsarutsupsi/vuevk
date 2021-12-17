@@ -15,6 +15,11 @@ export default {
   components: {
       Unity,
     },
+    methods: {
+    ImageStream(value) {
+      document.getElementById("ImageBase64").innerHTML = value;
+    }
+  }
 };
 </script>
 
