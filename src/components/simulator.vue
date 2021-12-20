@@ -16,7 +16,7 @@ export default {
     },
     data() {
         return {
-            ImageBase64: "",
+            ImageBase64: "25",
         };
     },
     methods: {
