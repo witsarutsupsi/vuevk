@@ -11,17 +11,24 @@
 import Unity from 'vue-unity-webgl'
 
 export default {
-  name: "component-name",
-  components: {
-      Unity,
+    name: "component-name",
+    components: {
+        Unity,
+    },
+    props: {},
+    created() {},
+    data () {
+      return {
+        gameInstance: null,
+      }
     },
     methods: {
         //ImageStream (value){
             //this.$refs.ImageBase64.innerText = value;    
         //},
         onClick() {
-            //this.$refs.gameInstance.SendMessage("CameraVK", "KanomchanLinearDirec", "0.1")
-            this.$refs.ImageBase64.innerText = 20;   
+            this.$refs.gameInstance.SendMessage("CameraVK", "KanomchanLinearDirec", "0.1")
+            //this.$refs.ImageBase64.innerText = 20;   
         }
 
     }
