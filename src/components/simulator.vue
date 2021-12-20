@@ -13,13 +13,14 @@ export default {
   components: {
       Unity,
     },
-    methods: {
-        onClick () {
-            this.$refs.myInstance.message("CameraVK", "KanomchanLinearDirec", 0.1)
-        }
-        //this.$refs.myInstance.message("CameraVK", "KanomchanLinearDirec", 0.1);
-    }
 };
+new Vue({
+  methods: {
+    onClick () {
+      this.$refs.myInstance.message("CameraVK", "KanomchanLinearDirec", 0.1)
+    }
+  }
+})
 </script>
 
 <style scoped></style>
