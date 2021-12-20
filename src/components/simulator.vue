@@ -2,7 +2,7 @@
 <div>
     Hi Hi Hi
   <unity src="static/Build/VK Build.json" width="1000" height="600" unityLoader="static/Build/UnityLoader.js"></unity>
-  <p id="ImageBase64">10</p>
+  <p id="ImageBase64">Base64</p>
 </div>
 </template>
 
@@ -16,7 +16,7 @@ export default {
     },
     data() {
         return {
-            ImageBase64: "25",
+            Base64: "25",
         };
     },
     methods: {
@@ -25,7 +25,7 @@ export default {
         },
         
         ImageStream : function(value){
-            this.ImageBase64 = value;
+            this.Base64 = value;
         }
     },
 };
