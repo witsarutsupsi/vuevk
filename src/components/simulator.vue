@@ -16,7 +16,7 @@ export default {
     },
     methods: {
         onClick () {
-            this.$refs.myInstance.message("CameraVK", "KanomchanLinearDirec", 0.1)
+            this.$refs.myInstance.message("CameraVK", "KanomchanLinearDirec", "0.1")
         }
         //ImageStream(value){
             //document.getElementById("ImageBase64").innerText = value;
