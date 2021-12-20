@@ -3,7 +3,7 @@
     Hi Hi Hi
   <unity src="static/Build/VK Build.json" width="1000" height="600" unityLoader="static/Build/UnityLoader.js"></unity>
   <div id="ImageBase64" ref="ImageBase64">{{ message }}</div>
-  <button @click="myFunction()">Click Me</button>
+  <button v-on:click="onClick()">Click Me</button>
 </div>
 </template>
 
@@ -19,12 +19,9 @@ export default {
 	  message:"Welcome"
     },
     methods: {
-        myFunction: function () {		
-		    this.$refs.ImageBase64.innerText = 'Hello World';
-        },
-        ImageStream (value){
-            this.$refs.ImageBase64.innerText = = value;    
-        },
+        //ImageStream (value){
+            //this.$refs.ImageBase64.innerText = = value;    
+        //},
         onClick () {
             this.$refs.myInstance.message("CameraVK", "KanomchanLinearDirec", "0.1")
             
