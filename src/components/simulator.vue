@@ -15,14 +15,15 @@ export default {
       Unity,
     },
     data: {
-          ImageBase64: 'Hello this is GeeksforGeeks.'
+          ImageBase64: null
     },
     methods: {
     ImageStream(value) {
       //document.getElementById("ImageBase64") = value;
+      this.ImageBase64 = value;
     
     }
-    this.$refs.myInstance.message("CameraVK", "KanomchanLinearDirec", 0.1);
+    //this.$refs.myInstance.message("CameraVK", "KanomchanLinearDirec", 0.1);
   }
 };
 </script>
