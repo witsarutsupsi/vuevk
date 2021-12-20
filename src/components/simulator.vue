@@ -20,19 +20,10 @@ export default {
             //this.$refs.ImageBase64.innerText = = value;    
         //},
         onClick () {
-            this.$refs.gameInstance.message("CameraVK", "KanomchanLinearDirec", "0.1")
+            this.$refs.gameInstance.SendMessage("CameraVK", "KanomchanLinearDirec", "0.1")
             
-        },
-        message(gameObject, method, param) {
-            if (param === null) {
-                param = ''
-            }   
-            if (this.gameInstance !== null){
-                this.gameInstance.SendMessage(gameObject, method, param)
-            } else {
-                //console.warn('vue-unity-webgl: you\'ve sent a message to the Unity content, but it wasn\t instantiated yet.')
-            }
         }
+
     }
 };
 
