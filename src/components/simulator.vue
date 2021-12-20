@@ -2,7 +2,7 @@
 <div>
     Hi Hi Hi
   <unity src="static/Build/VK Build.json" width="1000" height="600" unityLoader="static/Build/UnityLoader.js"></unity>
-  <p id="ImageBase64">0</p>
+
 </div>
 </template>
 
@@ -18,9 +18,9 @@ export default {
         onClick () {
             this.$refs.myInstance.message("CameraVK", "KanomchanLinearDirec", 0.1)
         }
-        ImageStream(value){
-            document.getElementById("ImageBase64").innerText = value;
-        }
+        //ImageStream(value){
+            //document.getElementById("ImageBase64").innerText = value;
+        //}
     },
 };
 
