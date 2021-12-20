@@ -17,7 +17,7 @@ export default {
     
     methods: {
     ImageStream(value) {
-      document.body.getElementById("ImageBase64").innerText = value;
+      document.getElementById("ImageBase64").innerText = value;
     }
   }
 };
