@@ -19,8 +19,8 @@ export default {
             this.$refs.myInstance.message("CameraVK", "KanomchanLinearDirec", "0.1")
         }
         
-        ImageStream(value){
-        }
+        //ImageStream(value){
+        //}
     },
 };
 
