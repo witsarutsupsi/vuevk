@@ -19,7 +19,7 @@ export default {
         //ImageStream (value){
             //this.$refs.ImageBase64.innerText = = value;    
         //},
-        onClick () {
+        onClick() {
             this.$refs.gameInstance.SendMessage("CameraVK", "KanomchanLinearDirec", "0.1")
             
         }
