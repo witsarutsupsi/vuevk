@@ -1,7 +1,8 @@
 <template>
 <div>
     Hi Hi Hi
-  <unity src="static/Build/VK Build.json" width="1000" height="600" unityLoader="static/Build/UnityLoader.js"></unity>  
+  <unity src="static/Build/VK Build.json" width="1000" height="600" unityLoader="static/Build/UnityLoader.js"></unity>
+  <p id="ImageBase64">0</p>
 </div>
 </template>
 
@@ -13,14 +14,16 @@ export default {
   components: {
       Unity,
     },
+    methods: {
+        onClick () {
+            this.$refs.myInstance.message("CameraVK", "KanomchanLinearDirec", 0.1)
+        }
+        ImageStream(value){
+            document.getElementById("ImageBase64").innerText = value;
+        }
+    },
 };
-new Vue({
-  methods: {
-    onClick () {
-      this.$refs.myInstance.message("CameraVK", "KanomchanLinearDirec", 0.1)
-    }
-  }
-})
+
 </script>
 
 <style scoped></style>
