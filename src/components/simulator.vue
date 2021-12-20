@@ -15,12 +15,12 @@ export default {
       Unity,
     },
     data: {
-          ImageBase64: null
+          ImageBase64: 'hello'
     },
     methods: {
     ImageStream(value) {
       //document.getElementById("ImageBase64") = value;
-      this.ImageBase64 = value;
+      //this.ImageBase64 = value;
     
     }
     //this.$refs.myInstance.message("CameraVK", "KanomchanLinearDirec", 0.1);
