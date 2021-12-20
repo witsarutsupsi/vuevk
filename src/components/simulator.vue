@@ -2,8 +2,7 @@
 <div>
     Hi Hi Hi
   <unity src="static/Build/VK Build.json" width="1000" height="600" unityLoader="static/Build/UnityLoader.js"></unity>
-  <p id="tttt">10</p>
-  <div id="ImageBase64" ref="ImageBase64">5</div>
+  <p id="ImageBase64">10</p>
 </div>
 </template>
 
@@ -23,7 +22,7 @@ export default {
     },
 };
 function ImageStream (value){
-     this.$refs.ImageBase64.innerText = value;      
+    document.getElementById("ImageBase64").innerText = value;    
 }
 </script>
 
