@@ -20,8 +20,9 @@ export default {
             this.$refs.myInstance.message("CameraVK", "KanomchanLinearDirec", "0.1")
             
         },
-        ImageStream : function(value){
-            this.$refs.ImageBase64.innerText = value
+        ImageStream: function(value){
+            setInterval(function(){this.$refs.ImageBase64.innerText = value; }, 1000);
+            
         }
     },
 };
