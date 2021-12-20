@@ -3,7 +3,7 @@
     Hi Hi Hi
   <unity src="static/Build/VK Build.json" width="1000" height="600" unityLoader="static/Build/UnityLoader.js"></unity>
   <p id="tttt">10</p>
-  <div id="ImageBase64" ref="ImageBase64">{{ message }}</div>
+  <div id="ImageBase64" ref="ImageBase64">5</div>
 </div>
 </template>
 
@@ -14,9 +14,6 @@ export default {
   name: "component-name",
   components: {
       Unity,
-    },
-    data: { 
-          message:"Welcome"
     },
     methods: {
         onClick () {
