@@ -17,9 +17,9 @@ export default {
     
     methods: {
     ImageStream(value) {
-      document.getElementById("ImageBase64") = value;
+      //document.getElementById("ImageBase64") = value;
+      this.$refs.ImageBase64.innerText = value;
     }
-    document.getElementById("ImageBase64") = 10;
     //this.$refs.myInstance.message("CameraVK", "KanomchanLinearDirec", 0.1);
   }
 };
