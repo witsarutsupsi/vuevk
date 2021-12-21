@@ -9,19 +9,13 @@
 
 <script>
 import Unity from 'vue-unity-webgl'
-
+var gameInstance = UnityLoader.instantiate("gameContainer", "static/Build/VK Build.json", {onProgress: UnityProgress});
 export default {
     name: "component-name",
     components: {
         Unity,
     },
-    props: {},
-    created() {},
-    data () {
-      return {
-        gameInstance: null,
-      }
-    },
+
     methods: {
         //ImageStream (value){
             //this.$refs.ImageBase64.innerText = value;    
