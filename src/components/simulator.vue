@@ -17,12 +17,12 @@ export default {
         Unity,
     },
     methods: {
-        Call_RunProgram(value){
-            this.$refs.ImageBase64.innerText = vkrun;  
-        },
-        //Call_RunProgram: function (value) {
+        //Call_RunProgram(value){
             //this.$refs.ImageBase64.innerText = value;  
         //},
+        Call_RunProgram: function (value) {
+            this.$refs.ImageBase64.innerText = value;  
+        },
         //ImageStream (value){
             //this.$refs.ImageBase64.innerText = value;    
         //},
