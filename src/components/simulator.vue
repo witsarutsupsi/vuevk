@@ -17,7 +17,7 @@ export default {
     components: {
         Unity,
     },
-    props: {'unityLoader'},
+    props: {},
     data() {
       return {
         gameInstance: null,
