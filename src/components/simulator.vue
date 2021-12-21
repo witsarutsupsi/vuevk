@@ -17,10 +17,11 @@ export default {
         Unity,
     },
     methods: {
-    var x;
         Call_RunProgram(value){
-            x = value;
+            var x = value;
         }
+        //Call_RunProgram: function (value) {
+        //}
         //ImageStream (value){
             //this.$refs.ImageBase64.innerText = value;    
         //},
