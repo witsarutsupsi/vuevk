@@ -10,14 +10,13 @@
 
 <script>
 import Unity from 'vue-unity-webgl'
-
+Call_RunProgram(value){
+    this.$refs.ImageBase64.innerText = value;  
+}
 export default {
     name: "component-name",
     components: {
         Unity,
-    },
-    Call_RunProgram(value){
-        this.$refs.ImageBase64.innerText = value;  
     },
     methods: {
         //Call_RunProgram(value){
