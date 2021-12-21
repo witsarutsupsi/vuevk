@@ -27,7 +27,7 @@ export default {
             //this.$refs.ImageBase64.innerText = value;    
         //},
         onClick() {
-            this.$refs.gameInstance.SendMessage("MainMenu", "KanomchanLinearDirec", "0.1")
+            this.$refs.gameInstance.SendMessage("CameraVK", "KanomchanLinearDirec", "0.1")
             //this.$refs.ImageBase64.innerText = 20;   
         }
 
