@@ -11,7 +11,7 @@
 <script>
 import Unity from 'vue-unity-webgl'
 
-new Vue({
+export default {
     name: "component-name",
     components: {
         Unity,
@@ -34,7 +34,7 @@ new Vue({
             this.$refs.gameInstance.message("CameraVK", "KanomchanLinearDirec", "0"); 
         }
     }
-});
+};
 
 </script>
 
