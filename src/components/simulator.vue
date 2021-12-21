@@ -19,16 +19,16 @@ export default {
     methods: {
         Call_RunProgram(value){
             var x = value;
-        }
+        },
         //Call_RunProgram: function (value) {
-        //}
+        //},
         //ImageStream (value){
             //this.$refs.ImageBase64.innerText = value;    
         //},
         onClickF() {
             this.$refs.gameInstance.message("CameraVK", "KanomchanLinearDirec", "0.1");
             //this.$refs.ImageBase64.innerText = 20;   
-        }
+        },
         onClickS() {
             this.$refs.gameInstance.message("CameraVK", "KanomchanLinearDirec", "0"); 
         }
