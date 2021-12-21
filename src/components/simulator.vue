@@ -9,7 +9,8 @@
 </template>
 
 <script>
-import Unity from 'vue-unity-webgl'
+//import Unity from 'vue-unity-webgl'
+import { Unity, Message } from 'vue-unity-webgl';
 require('../static/TemplateData/style.css');
 
 export default {
@@ -17,18 +18,14 @@ export default {
     components: {
         Unity,
     },
-    props: {},
-    data() {
-      return {
-        gameInstance: null,
-      };
-    },
+
     methods: {
         //ImageStream (value){
             //this.$refs.ImageBase64.innerText = value;    
         //},
         onClick() {
-            this.$refs.gameInstance.SendMessage("CameraVK", "KanomchanLinearDirec", "0.1"));
+            Message('CameraVK', 'KanomchanLinearDirec', '0.1');
+            //this.$refs.gameInstance.SendMessage("CameraVK", "KanomchanLinearDirec", "0.1"));
             //this.$refs.ImageBase64.innerText = 20;   
         }
 
