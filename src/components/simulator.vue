@@ -1,6 +1,7 @@
 <template>
 <div>
     Hi Hi Hi
+  <script type="javascript" src="../static/Build/UnityLoader.js"></script>
   <unity src="static/Build/VK Build.json" width="1000" height="600" unityLoader="static/Build/UnityLoader.js"></unity>
   <div id="ImageBase64" ref="ImageBase64">12</div>
   <button v-on:click="onClick()">Click Forward</button>
@@ -9,19 +10,26 @@
 
 <script>
 import Unity from 'vue-unity-webgl'
-var gameInstance = UnityLoader.instantiate("gameContainer", "static/Build/VK Build.json", {onProgress: UnityProgress});
+require('../static/TemplateData/style.css');
+
 export default {
     name: "component-name",
     components: {
         Unity,
     },
-
+    props: {'unityLoader'},
+    data() {
+      return {
+        gameInstance: null,
+      };
+    },
     methods: {
+        this.gameInstance = UnityLoader.instantiate("gameContainer", "static/Build/VK Build.json", {onProgress: UnityProgress});
         //ImageStream (value){
             //this.$refs.ImageBase64.innerText = value;    
         //},
         onClick() {
-            return (this.$refs.gameInstance.SendMessage("CameraVK", "KanomchanLinearDirec", "0.1"));
+            this.$refs.gameInstance.SendMessage("CameraVK", "KanomchanLinearDirec", "0.1"));
             //this.$refs.ImageBase64.innerText = 20;   
         }
 
