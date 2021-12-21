@@ -10,22 +10,16 @@
 
 <script>
 import Unity from 'vue-unity-webgl'
+
 new Vue({
-  methods: {
-    Call_RunProgram(value) {
-      this.$refs.ImageBase64.innerText = value;  
-    }
-  }
-});
-export default {
     name: "component-name",
     components: {
         Unity,
     },
     methods: {
-        //Call_RunProgram(value){
-            //this.$refs.ImageBase64.innerText = value;  
-        //},
+        Call_RunProgram(value){
+            this.$refs.ImageBase64.innerText = value;  
+        },
         //Call_RunProgram: function (value) {
             //this.$refs.ImageBase64.innerText = value;  
         //},
@@ -40,7 +34,7 @@ export default {
             this.$refs.gameInstance.message("CameraVK", "KanomchanLinearDirec", "0"); 
         }
     }
-};
+});
 
 </script>
 
