@@ -25,7 +25,7 @@ export default {
     },
     methods: {
         Call_RunProgram(value){
-            vkrun = value;
+            this.vkrun = value;
             this.$refs.ImageBase64.innerText = vkrun;  
         },
         //Call_RunProgram: function (value) {
