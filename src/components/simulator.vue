@@ -24,7 +24,6 @@ export default {
       };
     },
     methods: {
-        this.gameInstance = UnityLoader.instantiate("gameContainer", "static/Build/VK Build.json", {onProgress: UnityProgress});
         //ImageStream (value){
             //this.$refs.ImageBase64.innerText = value;    
         //},
