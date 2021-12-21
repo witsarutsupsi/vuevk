@@ -1,7 +1,7 @@
 <template>
 <div>
     Hi Hi Hi
-  <unity ref="gameInstance" src="static/Build/VK Build.json" width="1000" height="600" unityLoader="static/Build/UnityLoader.js"></unity>
+  <unity ref="gameInstance" src="static/Build/VK Build.json" width="1000" height="600" class="webgl-content" unityLoader="static/Build/UnityLoader.js"></unity>
   <div id="ImageBase64" ref="ImageBase64">12</div>
   <button v-on:click="onClick()">Click Forward</button>
 </div>
