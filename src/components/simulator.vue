@@ -16,13 +16,16 @@ export default {
     components: {
         Unity,
     },
+    Call_RunProgram(value){
+        this.$refs.ImageBase64.innerText = value;  
+    },
     methods: {
         //Call_RunProgram(value){
             //this.$refs.ImageBase64.innerText = value;  
         //},
-        Call_RunProgram: function (value) {
-            this.$refs.ImageBase64.innerText = value;  
-        },
+        //Call_RunProgram: function (value) {
+            //this.$refs.ImageBase64.innerText = value;  
+        //},
         //ImageStream (value){
             //this.$refs.ImageBase64.innerText = value;    
         //},
