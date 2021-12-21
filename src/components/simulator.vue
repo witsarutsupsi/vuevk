@@ -8,11 +8,9 @@
 </div>
 </template>
 
+<script src="TemplateData/responsive.javascript"></script>
 <script>
 import Unity from 'vue-unity-webgl'
-Call_RunProgram(value){
-    this.$refs.ImageBase64.innerText = value;  
-}
 export default {
     name: "component-name",
     components: {
