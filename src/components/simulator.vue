@@ -18,7 +18,7 @@ export default {
     },
     methods: {
         Call_RunProgram(value){
-            var x = value;
+            this.$refs.ImageBase64.innerText = value;  
         },
         //Call_RunProgram: function (value) {
         //},
