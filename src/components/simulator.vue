@@ -16,16 +16,8 @@ export default {
     components: {
         Unity,
     },
-    props: {},
-    created() {},
-    data() {
-        return {
-            vkrun: "0",
-        };
-    },
     methods: {
         Call_RunProgram(value){
-            this.vkrun = value;
             this.$refs.ImageBase64.innerText = vkrun;  
         },
         //Call_RunProgram: function (value) {
