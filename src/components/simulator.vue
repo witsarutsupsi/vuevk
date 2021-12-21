@@ -11,7 +11,6 @@
 <script>
 //import Unity from 'vue-unity-webgl'
 import { Unity, Message } from 'vue-unity-webgl';
-require('../static/TemplateData/style.css');
 
 export default {
     name: "component-name",
