@@ -8,7 +8,6 @@
 </div>
 </template>
 
-<script src="static/TemplateData/responsive.javascript"></script>
 <script>
 import Unity from 'vue-unity-webgl'
 export default {
