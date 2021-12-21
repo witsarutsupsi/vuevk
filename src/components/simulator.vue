@@ -21,7 +21,7 @@ export default {
             SendMessage: function(value) {
                 this.$refs.ImageBase64.innerText = value;  
             }
-        }),
+        });
         //Call_RunProgram(value){
             //this.$refs.ImageBase64.innerText = value;  
         //},
