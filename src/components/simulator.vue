@@ -41,7 +41,7 @@ export default {
         }
     },
     params: {
-        this.$refs.ImageBase64.innerText = ImgStream();
+        //this.$refs.ImageBase64.innerText = ImgStream();
     }
 };
 
