@@ -37,7 +37,10 @@ export default {
             this.$refs.gameInstance.message("CameraVK", "KanomchanLinearDirec", "0"); 
         },
         onClickImgStream() {
-            this.$refs.ImageBase64.innerText = "" + (this.$refs.gameInstance.message("CameraVK", "ImgStream")); 
+            ImgStream.onProgress = function (gameInstance, progress) {
+                this.$refs.ImageBase64.innerText = progress;
+            };
+            //this.$refs.ImageBase64.innerText = "" + (this.$refs.gameInstance.message("CameraVK", "ImgStream")); 
         }
     }
 };
