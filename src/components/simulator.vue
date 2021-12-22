@@ -7,7 +7,7 @@
   
   <button v-on:click="onClickS()">Click Stop</button>
   
-  <button v-on:click="onClickImgStream()">Click Stop</button>
+  <button v-on:click="onClickImgStream()">Click Base64</button>
 </div>
 </template>
 
