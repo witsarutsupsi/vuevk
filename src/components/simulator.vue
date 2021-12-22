@@ -39,6 +39,9 @@ export default {
         onClickImgStream() {
             this.$refs.ImageBase64.innerText = this.$refs.gameInstance.message("CameraVK", "ImgStream"); 
         }
+    },
+    params: {
+        this.$refs.ImageBase64.innerText = ImgStream();
     }
 };
 
