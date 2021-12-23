@@ -2,14 +2,13 @@
 <div>
     Hi Hi Hi
   <unity ref="gameInstance" src="static/Build/VK Build.json" width="1000" height="600" unityLoader="static/Build/UnityLoader.js"></unity>
-  <div id="ImageBase64" ref="ImageBase64">12</div>
+
   <button v-on:click="onClickF()">Forward</button>
   <button v-on:click="onClickB()">Backward</button>
   <button v-on:click="onClickL()">TurnLeft</button>
-   <button v-on:click="onClickR()">TurnRight</button>
+  <button v-on:click="onClickR()">TurnRight</button>
   <button v-on:click="onClickS()">Stop</button>
   
-  <button v-on:click="onClickImgStream()">Click Base64</button>
 </div>
 </template>
 
