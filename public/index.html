@@ -12,11 +12,16 @@
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
-      <p id="Run">49</p>
+      <p id="Run">0</p>
+      <p id="ฺBase64">0</p>
       <script>
       function RunVK(value)
       {
           document.getElementById("Run").innerHTML = value;
+      }
+      function ImgStream(value)
+      {
+          document.getElementById("Base64").innerHTML = value;
       }
       </script>
     <!-- built files will be auto injected -->
