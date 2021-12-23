@@ -38,15 +38,12 @@ export default {
         },
         onClickImgStream() {
             this.$refs.ImageBase64.innerText = this.$refs.gameInstance.message("CameraVK", "ImgStream"); 
+        },
+        RunVK: function(msg){
+            this.$refs.ImageBase64.innerText = msg;
         }
-    },
-    params: {
-        RunVK(str){
-            this.$refs.ImageBase64.innerText = str;
-        }
-        
-        //this.$refs.ImageBase64.innerText = ImgStream();
     }
+
 };
 
 </script>
