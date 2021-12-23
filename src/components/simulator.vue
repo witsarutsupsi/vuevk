@@ -3,9 +3,11 @@
     Hi Hi Hi
   <unity ref="gameInstance" src="static/Build/VK Build.json" width="1000" height="600" unityLoader="static/Build/UnityLoader.js"></unity>
   <div id="ImageBase64" ref="ImageBase64">12</div>
-  <button v-on:click="onClickF()">Click Forward</button>
-  
-  <button v-on:click="onClickS()">Click Stop</button>
+  <button v-on:click="onClickF()">Forward</button>
+  <button v-on:click="onClickB()">Backward</button>
+  <button v-on:click="onClickL()">TurnLeft</button>
+   <button v-on:click="onClickR()">TurnRight</button>
+  <button v-on:click="onClickS()">Stop</button>
   
   <button v-on:click="onClickImgStream()">Click Base64</button>
 </div>
@@ -20,28 +22,23 @@ export default {
         Unity,
     },
     methods: {
-        //Call_RunProgram(value){
-            //this.$refs.ImageBase64.innerText = value;  
-        //},
-        //Call_RunProgram: function (value) {
-            //this.$refs.ImageBase64.innerText = value;  
-        //},
-        //ImageStream (value){
-            //this.$refs.ImageBase64.innerText = value;    
-        //},
         onClickF() {
             this.$refs.gameInstance.message("CameraVK", "KanomchanLinearDirec", "0.1");
-            //this.$refs.ImageBase64.innerText = 20;   
+        },
+        onClickB() {
+            this.$refs.gameInstance.message("CameraVK", "KanomchanLinearDirec", "-0.1");
+        },
+        onClickL() {
+            this.$refs.gameInstance.message("CameraVK", "KanomchanAngularDirec", "0.2");
+        },
+         onClickR() {
+            this.$refs.gameInstance.message("CameraVK", "KanomchanAngularDirec", "-0.2");
         },
         onClickS() {
             this.$refs.gameInstance.message("CameraVK", "KanomchanLinearDirec", "0"); 
-        },
-        onClickImgStream() {
-            this.$refs.ImageBase64.innerText = this.$refs.gameInstance.message("CameraVK", "ImgStream"); 
+            this.$refs.gameInstance.message("CameraVK", "KanomchanAngularDirec", "0"); 
         }
-        //RunVK: function(msg){
-            //this.$refs.ImageBase64.innerText = msg;
-        //}
+
     }
 
 };
