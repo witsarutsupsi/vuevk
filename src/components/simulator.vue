@@ -41,6 +41,9 @@ export default {
         }
     },
     params: {
+        RunVK(str){
+            this.$refs.ImageBase64.innerText = str;
+        }
         //this.$refs.ImageBase64.innerText = ImgStream();
     }
 };
