@@ -22,19 +22,19 @@ export default {
     },
     methods: {
         onClickF() {
-            this.$refs.gameInstance.message("CameraVK", "KanomchanLinearDirec", "0.1");
+            this.$refs.gameInstance.message("CameraVK", "KanomchanLinearDirec", "0.15");
             this.$refs.gameInstance.message("CameraVK", "KanomchanAngularDirec", "0"); 
         },
         onClickB() {
-            this.$refs.gameInstance.message("CameraVK", "KanomchanLinearDirec", "-0.1");
+            this.$refs.gameInstance.message("CameraVK", "KanomchanLinearDirec", "-0.15");
             this.$refs.gameInstance.message("CameraVK", "KanomchanAngularDirec", "0"); 
         },
         onClickL() {
-            this.$refs.gameInstance.message("CameraVK", "KanomchanAngularDirec", "0.2");
+            this.$refs.gameInstance.message("CameraVK", "KanomchanAngularDirec", "0.4");
             this.$refs.gameInstance.message("CameraVK", "KanomchanLinearDirec", "0");
         },
          onClickR() {
-            this.$refs.gameInstance.message("CameraVK", "KanomchanAngularDirec", "-0.2");
+            this.$refs.gameInstance.message("CameraVK", "KanomchanAngularDirec", "-0.4");
             this.$refs.gameInstance.message("CameraVK", "KanomchanLinearDirec", "0");
         },
         onClickS() {
