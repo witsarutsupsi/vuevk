@@ -66,15 +66,20 @@
     //}
     /////
     //Send to VK
-    function MSG_RunProgram()
+    function MSG_RunProgram(value)
     {
-        return (gameInstance.SendMessage("CameraVK", "ProgramRun"));
+        x = value;
+        if(value == 0){
+            document.getElementById("LinearDirec").innerHTML = 0;
+            document.getElementById("AngularDirec").innerHTML = 0;
+        }
+        return (gameInstance.SendMessage("CameraVK", "ProgramRun", value));
     }
-    function CameraEnable(val)
-    {
-        return (gameInstance.SendMessage("CameraVK", "CameraSnapOnOff", val));
+    //function CameraEnable(val)
+    //{
+        //return (gameInstance.SendMessage("CameraVK", "CameraSnapOnOff", val));
         
-    }
+    //}
     function VK_MovementDirec(linear ,angular){
         //return (gameInstance.SendMessage("CameraVK", "KanomchanLinearDirec", "" + JSON.stringify(obj)));
         document.getElementById("LinearDirec").innerHTML = JSON.stringify(linear);
