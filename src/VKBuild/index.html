@@ -22,7 +22,6 @@
 
 <p id="LinearDirec">0</p>
 <p id="AngularDirec">0</p>
-
 </details>
 <script src="TemplateData/responsive.javascript"></script>
 <script>
@@ -67,6 +66,15 @@
     //}
     /////
     //Send to VK
+    function MSG_RunProgram()
+    {
+        return (gameInstance.SendMessage("CameraVK", "ProgramRun"));
+    }
+    function CameraEnable(val)
+    {
+        return (gameInstance.SendMessage("CameraVK", "CameraSnapOnOff", val));
+        
+    }
     function VK_MovementDirec(linear ,angular){
         //return (gameInstance.SendMessage("CameraVK", "KanomchanLinearDirec", "" + JSON.stringify(obj)));
         document.getElementById("LinearDirec").innerHTML = JSON.stringify(linear);
