@@ -71,10 +71,6 @@
     function MSG_RunProgram(value)
     {
         x = value;
-        if(value == 0){
-            document.getElementById("LinearDirec").innerHTML = 0;
-            document.getElementById("AngularDirec").innerHTML = 0;
-        }
         return (gameInstance.SendMessage("CameraVK", "ProgramRun", value));
     }
     //function CameraEnable(val)
@@ -105,6 +101,11 @@
         {
             MSG_LinearDirec(document.getElementById("LinearDirec").innerHTML);
             MSG_AngularDirec(document.getElementById("AngularDirec").innerHTML);
+        }
+        else
+        {
+            document.getElementById("LinearDirec").innerHTML = 0;
+            document.getElementById("AngularDirec").innerHTML = 0;
         }
     }
     /////
